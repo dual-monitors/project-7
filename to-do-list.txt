@@ -1,0 +1,1 @@
+1. Figure out image sizing using PHP
