@@ -276,3 +276,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+// Hide WP Bar
+add_filter('show_admin_bar', '__return_false');
