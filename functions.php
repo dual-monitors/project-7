@@ -45,8 +45,14 @@ of writing our own link tags in the header. */
 function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
-	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+	wp_enqueue_style('http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,900');
+
+	wp_enqueue_style('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+	wp_enqueue_style('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800');
 }
+
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
 /* Add all our JavaScript files here.

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<?php // Load Meta ?>
@@ -6,9 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,900' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
 </head>

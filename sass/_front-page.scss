@@ -2,10 +2,39 @@
 
 .hero {
 	width: 100%;
-	height: calc(100vh - 120px);
+	height: calc(100vh - 70px);
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+.hero-content {
+	h1 {
+		letter-spacing: 3px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 100px;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+.hero-keywords {
+	display: flex;
+	justify-content: center;
+	color: white;
+	p {
+		margin: 0 10px;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		font-size: 13px;
+		font-family: 'Montserrat', sans-serif;
+	}
+	p:nth-child(2):before, p:nth-child(2):after {
+		content: '|';
+	}
+}
+	
+
 
       
  
