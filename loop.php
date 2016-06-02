@@ -17,24 +17,34 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+			<?php echo get_the_post_thumbnail( $page->ID, 'large' ); ?>
+
 			<h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?>
-        </a>
-      </h2>
+        		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+          		<?php the_title(); ?>
+        		</a>
+      		</h2>
+			
+			<div class="date-comments">
+				<p>Posted: <?php echo get_the_date('F j, Y'); ?></p>
+				<p><?php comments_popup_link('Leave a comment &raquo;', '1 Comment &raquo;', '% Comments &raquo;'); ?></p>
+			</div>
+			<div class="author-category">
+				<p>Posted by <a href=""><?php echo get_the_author(); ?></a></p>
+				<p>In <?php the_category(', '); ?></p>
+			</div>
 
 			<section class="entry-content">
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
-          'before' => '<div class="page-link"> Pages:',
-          'after' => '</div>'
-        )); ?>
+          			'before' => '<div class="page-link"> Pages:',
+          			'after' => '</div>'
+        		)); ?>
 			</section><!-- .entry-content -->
 
 			<footer>
-				<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
+        		<p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
 			</footer>
 
 		</article><!-- #post-## -->
