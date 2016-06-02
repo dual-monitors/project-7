@@ -8,4 +8,40 @@
 			list-style: none;
 		}
 	}
+	h3 {
+		padding: 15px 20px;
+		background: #212127;
+		color: #8A8A8A;
+		font-family: 'Merriweather', serif;
+		font-size: 18px;
+		font-weight: 300;
+	}
+	.widget_recent_entries {
+		li {
+			margin: 5px 0;
+		}
+		a {
+			color: #2F2F33;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 24px;
+		}
+	}
+	.widget_search {
+		margin: 25px 0;
+		input[type="search"] {
+			border: 1px solid #eee;
+			outline: transparent;
+			padding: 5px;
+			margin-right: 2%;
+			width: 68%
+		}
+		input[type="submit"] {
+			background: black;
+			color: white;
+			border: none;
+			padding: 6px;
+			width: 25%;
+		}
+	}
 }

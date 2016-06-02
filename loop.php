@@ -27,11 +27,11 @@
   		</h2>
 		
 		<div class="date-comments">
-			<p>Posted: <?php echo get_the_date('F j, Y'); ?></p>
-			<p><?php comments_popup_link('Leave a comment &raquo;', '1 Comment &raquo;', '% Comments &raquo;'); ?></p>
+			<p class="date"><?php echo get_the_date('F j, Y'); ?> / </p>
+			<!-- <p class="comment-link"> --><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?><!-- </p> -->
 		</div>
 		<div class="author-category">
-			<p>Posted by <a href=""><?php echo get_the_author(); ?></a></p>
+			<p class="author">Posted by <a href=""><?php echo get_the_author(); ?></a></p>
 			<p>In <?php the_category(', '); ?></p>
 		</div>
 

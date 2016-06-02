@@ -2,19 +2,23 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
 
 	<div class="page-title">
 		<h2> <?php echo $our_title = get_the_title( get_option('page_for_posts', true) ); ?> </h2>
 	</div>
-    <div class="content">
+
+  	<div class="container clearfix">
 
 
-    	<?php get_template_part( 'loop', 'index' );	?>
+<!-- 	<div class="content-sidebar"> -->
+	    <div class="content">
 
-    </div> <!--/.content -->
+	    	<?php get_template_part( 'loop', 'index' );	?>
 
-    <?php get_sidebar(); ?>
+	    </div> <!--/.content -->
+
+	    <?php get_sidebar(); ?>
+	 <!-- </div> -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
