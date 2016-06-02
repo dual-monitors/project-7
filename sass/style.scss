@@ -10,6 +10,7 @@
 @import 'normalize';
 @import 'typography';
 @import 'front-page';
+@import 'blog';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
@@ -41,6 +42,22 @@ body {
 
 .full {
 	width: 100%;
+}
+.page-title {
+	// background-image: url(../project-7-theme/images/bg.png), linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+	// background-size: cover;
+	// background-position: center;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		padding: 70px 0;
+		color: white;
+		letter-spacing: 3px;
+		font-size: 28px;
+		text-transform: uppercase;
+	}
 }
 
 
