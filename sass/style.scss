@@ -10,6 +10,7 @@
 @import 'normalize';
 @import 'typography';
 @import 'front-page';
+@import 'contact';
 @import 'blog';
 @import 'navigation';
 @import 'sidebar';
@@ -33,7 +34,6 @@ body {
 
 .container {
 	max-width: 1200px;
-	border: 1px solid red;
 	margin: 0 auto;
 }
 
