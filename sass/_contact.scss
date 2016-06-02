@@ -1,0 +1,35 @@
+.contact-info {
+	padding: 50px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	> div {
+		border: 1px solid yellow;
+		text-transform: uppercase;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.form-map {
+	margin-bottom: 50px;
+	width: 100%;
+	display: flex;
+	.form {
+		background-color: red;
+		margin: 0;
+		width: 50%;
+	}
+	input {
+		border: none;
+		border-bottom: 1px solid black;
+
+	}
+	.map {
+		width: 50%;
+		iframe {
+			width: 100%;
+		}
+	}
+}
