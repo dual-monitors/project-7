@@ -1,1 +1,3 @@
 1. Figure out image sizing using PHP
+
+2. Investigate using Font Awesome in functions.php (currently included in header.php)
