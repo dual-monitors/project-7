@@ -28,8 +28,18 @@
 	}
 	.map {
 		width: 50%;
-		iframe {
-			width: 100%;
-		}
+		// iframe {
+			// width: 100%;
+		// }
 	}
+}
+.acf-map {
+	border: #ccc solid 1px;
+	height: 425px;
+	width: 100%;
+}
+
+/* fixes potential CSS theme conflict */
+.acf-map img {
+   max-width: inherit !important;
 }

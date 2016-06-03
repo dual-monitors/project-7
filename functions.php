@@ -61,30 +61,64 @@ of writing our own script tags in the header and footer. */
 
 function hackeryou_scripts() {
 
-	//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
+	// Don't use WordPress' local copy of jQuery, load our own version from a CDN instead
 	wp_deregister_script('jquery');
+	
+	wp_enqueue_script(
+		'jquery', // Handle
+		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js", // Source
+		false, // Dependencies
+		null, // Version number
+		true // Load in footer
+	);
+
+
+
+	// Google Maps API Key
+	// AIzaSyAyIQ5_LIyKwD14MZvmRyCZ5aCwM0224CI
+	// Manage at - https://console.developers.google.com/apis/credentials/key/
+
+	// Set to accept requests from these HTTP referrers (websites):
+	//	- dustinruetz.com
+	//	- jordankeen.com
+	//	- http://localhost:3000/project-7/contact/
+
+
+
+	// Google Maps script source
+	// (Adapted from above "jquery" example)
+	wp_enqueue_script(
+		'google-map-api', // Handle
+		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maps.googleapis.com/maps/api/js?key=AIzaSyAyIQ5_LIyKwD14MZvmRyCZ5aCwM0224CI&v=3.exp&sensor=false", // Source
+		'jquery', // Dependencies
+		null, // Version number
+		true // Load in footer
+	);
+
+	// Custom script that calls google-map.js
+	// (Adapted from below "plugins" example)
+	wp_enqueue_script(
+		'google-map', // Handle
+		get_template_directory_uri() . '/js/google-map.js', // Source
+		'jquery', // Dependencies
+		null, // Version number
+		true // Load in footer
+	);
+
   wp_enqueue_script(
-  	'jquery',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
-  	false, //dependencies
-  	null, //version number
-  	true //load in footer
+	'plugins', // Handle
+	get_template_directory_uri() . '/js/plugins.js', // Source
+	false, // Dependencies
+	null, // Version number
+	true // Load in footer
   );
 
   wp_enqueue_script(
-    'plugins', //handle
-    get_template_directory_uri() . '/js/plugins.js', //source
-    false, //dependencies
-    null, // version number
-    true //load in footer
-  );
-
-  wp_enqueue_script(
-    'scripts', //handle
-    get_template_directory_uri() . '/js/main.min.js', //source
-    array( 'jquery', 'plugins' ), //dependencies
-    null, // version number
-    true //load in footer
+	'scripts', // Handle
+	get_template_directory_uri() . '/js/main.min.js', // Source
+	array( 'jquery', 'plugins' ), // Dependencies
+	null, // Version number
+	true // Load in footer
   );
 }
 
