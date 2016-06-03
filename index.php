@@ -7,18 +7,18 @@
 		<h2> <?php echo $our_title = get_the_title( get_option('page_for_posts', true) ); ?> </h2>
 	</div>
 
-  	<div class="container clearfix">
+  	<div class="container">
 
 
-<!-- 	<div class="content-sidebar"> -->
-	    <div class="content">
+	<div class="content-sidebar clearfix">
+	    <div class="blog-content">
 
 	    	<?php get_template_part( 'loop', 'index' );	?>
 
 	    </div> <!--/.content -->
 
 	    <?php get_sidebar(); ?>
-	 <!-- </div> -->
+	 </div>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
