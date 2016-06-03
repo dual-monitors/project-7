@@ -16,13 +16,15 @@
 }
 .entry-title {
 	margin: 25px 0 10px;
-	a {
-		color: #212127;
-		font-size: 28px;
-		font-weight: 600px;
-		font-family: 'Merriweather', serif;
-	}	
 }
+.entry-title,
+.entry-title a {
+	color: #212127;
+	font-size: 28px;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;	
+}
+
 .date-comments {
 	display: flex;
 	.date {
