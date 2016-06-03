@@ -1,17 +1,23 @@
 .content-sidebar {
-	margin-top: 50px;
+	margin: 50px auto 0;
+	max-width: 1080px;
+}
+.blog-content {
+	margin-right: 3%;
+	float: left;
+	width: 65%;
 }
 .blog-post {
 	margin-bottom: 50px;
 	img {
 		// width: 100%;
-		max-height: 500px;
+		max-height: 430px;
 	}
 }
 .entry-title {
 	margin: 25px 0 10px;
 	a {
-		color: rgb(43, 42, 56);
+		color: #212127;
 		font-size: 28px;
 		font-weight: 600px;
 		font-family: 'Merriweather', serif;
@@ -30,6 +36,10 @@
 		letter-spacing: 2px;
 		color: #428BCA;
 		text-transform: uppercase;
+		transition: all 0.3s;
+		&:hover {
+			color: black;
+		}
 	}
 }
 .author-category {
@@ -47,6 +57,10 @@
 	a {
 		font-weight: 300;
 		color: #aaa;
+		transition: all 0.3s;
+		&:hover {
+			color: black;
+		}
 	}
 }
 .entry-content {
