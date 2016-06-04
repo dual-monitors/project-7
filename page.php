@@ -7,17 +7,34 @@
   </div>
 
   <div class="container">
+  	<section class="about-section">
+		<div class="about-container">
+			<h2> <?php echo get_field('about_title') ?> </h2>
 
-	 <div class="content">
-		<?php // Start the loop ?>
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+			<?php $image = get_field('skills_accent'); ?>
+        	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
 
-		  <?php the_content(); ?>
+        	<p> <?php echo get_field('about_paragraph'); ?> </p>
 
-		<?php endwhile; // end the loop?>
-	 </div> <!-- /,content -->
+        	<div class="about-images">
+				<div class="about-image">
+					
+				</div>
+				<div class="about-image">
+					
+				</div>
+				<div class="about-image">
+					
+				</div>
+				<div class="about-image">
+					
+				</div>
+        	</div>
 
-	 <?php get_sidebar(); ?>
+		</div>
+  	</section>
+
+	
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

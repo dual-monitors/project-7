@@ -317,7 +317,7 @@ function get_post_parent($post) {
 	}
 }
 // Hide WP Bar
-add_filter('show_admin_bar', '__return_false');
+// add_filter('show_admin_bar', '__return_false');
 
 // Size for tag font-size 
 add_filter('widget_tag_cloud_args','set_tag_cloud_sizes');

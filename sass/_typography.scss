@@ -9,8 +9,9 @@ h6 {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: $black;
+	font-weight: 300;
 }
-
 a {
 	color: #BA209B;
 	text-decoration: none;
@@ -18,7 +19,13 @@ a {
 		color: #D424B1;
 	}
 }
+h2 {
+	font-size: 36px;
+	line-height: 47px;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
 
+}
 /* paragraphs */
 
 p {

@@ -33,7 +33,43 @@
 		content: '|';
 	}
 }
-	
+.skills-section {
+	// background-image: url(../project-7-theme/images/bg.png);
+	// background-repeat: no-repeat;
+	// background-position: center;
+	width: 100%;
+	padding: 140px 0;
+	.skills-container {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 925px;
+		padding: 0 15px;
+		p {
+			font-size: 21px;
+			font-weight: 200;
+			line-height: 1.4;
+			margin: 20px auto;
+			max-width: 670px;
+		}
+		.skills-images {
+			display: flex;
+			justify-content: space-between;
+			margin: 40px auto;
+			img {
+				height: 80px;
+				border-bottom: 2px solid $black;
+				padding-bottom: 20px;
+			}
+			p {
+				margin: 5px 0 0;
+			}
+		}
+		
+	}
+}
+.accent {
+	margin: 20px auto 0;
+}
 
 
       

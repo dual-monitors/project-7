@@ -7,10 +7,15 @@
 * Author URI: http://hackeryou.com
 */
 
+// Color Variables
+
+$black: #2F2F33;
+
 @import 'normalize';
 @import 'typography';
 @import 'front-page';
 @import 'contact';
+@import 'about';
 @import 'blog';
 @import 'navigation';
 @import 'sidebar';
@@ -25,24 +30,20 @@ Default Styling
 img {
 	max-width: 100%;
 }
-
 body {
 	color: #2F2F33;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
 .content {
 	float: left;
 	width: 65%;
 	margin-right: 5%;
 }
-
 .full {
 	width: 100%;
 }

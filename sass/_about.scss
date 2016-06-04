@@ -1,0 +1,30 @@
+.about-section {
+	width: 100%;
+	padding: 140px;
+	.about-container {
+		max-width: 925px;
+		margin: 0 auto;
+		padding: 0 15px;
+		border: 1px solid black;
+		height: 740px;
+		text-align: center;
+		h2 {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		p {
+			max-width: 700px;
+			margin: 20px auto;
+		}		
+	}
+}
+.about-images {
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	.about-image {
+		border: 1px solid black;
+		height: 320px;
+		width: 23%;
+	}
+}
