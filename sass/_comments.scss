@@ -166,6 +166,7 @@ h3#reply-title {
 	}
 	textarea {
 		width: 98%;
+		margin-top: 10px;
 	}
 	dt {
 		color: #888888;
@@ -183,8 +184,18 @@ h3#reply-title {
 	.form-submit {
 		margin: 0 0 24px;
 		input {
-			width: auto;
+			background: #212127;
 			font-size: 14px;
+			margin-top: 10px;
+			width: 130px;
+			color: white;
+			border: none;
+			padding: 6px;
+			transition: all 0.4s;
+			&:hover {
+				background: #EBEBEB;
+				color: black;
+			}
 		}
 	}
 	dl {
