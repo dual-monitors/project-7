@@ -214,7 +214,6 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
@@ -317,7 +316,9 @@ function get_post_parent($post) {
 	}
 }
 // Hide WP Bar
-// add_filter('show_admin_bar', '__return_false');
+
+add_filter('show_admin_bar', '__return_true');
+
 
 // Size for tag font-size 
 add_filter('widget_tag_cloud_args','set_tag_cloud_sizes');
