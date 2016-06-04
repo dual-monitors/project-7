@@ -71,6 +71,40 @@
 	margin: 20px auto 0;
 }
 
+.portfolio-section {
+	background-color: $black;
+}
 
-      
- 
+.overlay {
+	background: url("../project-7-theme/images/dot.png");
+}
+.portfolio-container {
+	margin: 0 auto;
+	max-width: 925px;
+	padding: 140px 0;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.portfolio-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 35%;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: #8A8A8A;
+	}
+}
+.portfolio-images {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.portfolio-image {
+	width: 50%;
+}
