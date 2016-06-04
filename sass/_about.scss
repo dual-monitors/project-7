@@ -5,8 +5,6 @@
 		max-width: 925px;
 		margin: 0 auto;
 		padding: 0 15px;
-		border: 1px solid black;
-		height: 740px;
 		text-align: center;
 		h2 {
 			max-width: 600px;
@@ -19,11 +17,9 @@
 	}
 }
 .about-images {
-	border: 1px solid black;
 	display: flex;
 	justify-content: space-between;
 	.about-image {
-		border: 1px solid black;
 		width: 23%;
 		img {
 			width: 100%;
@@ -42,5 +38,6 @@
 		font-family: 'Merriweather', serif;
 		font-size: 18px;
 		font-weight: 500;
+		margin-top: 5px;
 	}
 }
