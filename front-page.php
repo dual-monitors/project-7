@@ -29,30 +29,62 @@
 			<p> <?php echo get_field('skills_paragraph'); ?> </p>
 
 			<div class="skills-images">
-				<div class="skills-image">
+				<figure class="skills-image">
 					<?php $image = get_field('skills_image1'); ?>
         			<img src="<?php echo $image['sizes']['medium']?>">
         			<p> <?php echo get_field('skills_image1_title'); ?> </p>
-				</div>
-				<div class="skills-image">
+				</figure>
+				<figure class="skills-image">
 					<?php $image = get_field('skills_image2'); ?>
         			<img src="<?php echo $image['sizes']['medium']?>">
         			<p> <?php echo get_field('skills_image2_title'); ?> </p>
-				</div>
-				<div class="skills-image">
+				</figure>
+				<figure class="skills-image">
 					<?php $image = get_field('skills_image3'); ?>
         			<img src="<?php echo $image['sizes']['medium']?>">
         			<p> <?php echo get_field('skills_image3_title'); ?> </p>
-				</div>
-				<div class="skills-image">
+				</figure>
+				<figure class="skills-image">
 					<?php $image = get_field('skills_image4'); ?>
         			<img src="<?php echo $image['sizes']['medium']?>">
         			<p> <?php echo get_field('skills_image4_title'); ?> </p>
-				</div>
+				</figure>
 			</div>
 			
 		</div>
 
+	</section>
+
+	<section class="portfolio-section">
+		<div class="overlay">
+			<div class="portfolio-container">
+
+				<div class="portfolio-text">
+					<h2><?php echo get_field('portfolio_title'); ?></h2>
+					<p><?php echo get_field('portfolio_description'); ?></p>
+				</div>
+
+				<div class="portfolio-images">
+					<figure class="portfolio-image">
+						<?php $image = get_field('portfolio_piece1'); ?>
+	    				<img src="<?php echo $image['sizes']['medium']?>">
+					</figure>
+					<figure class="portfolio-image">
+	    				<?php $image = get_field('portfolio_piece2'); ?>
+	    				<img src="<?php echo $image['sizes']['medium']?>">
+	    			</figure>
+	    			<figure class="portfolio-image">
+	    				<?php $image = get_field('portfolio_piece3'); ?>
+	    				<img src="<?php echo $image['sizes']['medium']?>">
+	    			</figure>
+	    			<figure class="portfolio-image">
+	    				<?php $image = get_field('portfolio_piece4'); ?>
+	    				<img src="<?php echo $image['sizes']['medium']?>">
+	    			</figure>
+				</div>
+
+			</div>
+		</div>
 	</section>
 
 	<div class="container">
