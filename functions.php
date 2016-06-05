@@ -317,7 +317,7 @@ function get_post_parent($post) {
 }
 // Hide WP Bar
 
-add_filter('show_admin_bar', '__return_true');
+add_filter('show_admin_bar', '__return_false');
 
 
 // Size for tag font-size 

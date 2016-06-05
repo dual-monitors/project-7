@@ -87,6 +87,14 @@
 		</div>
 	</section>
 
+	<section class="quote-section">
+		<div class="quote-container">
+			<h5> <?php echo get_field('quote'); ?> </h5>
+			<p> <?php echo get_field('quote_writer'); ?> </p>
+
+		</div>
+	</section>
+
 	<div class="container">
 
 		<div class="content">
