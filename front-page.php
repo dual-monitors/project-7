@@ -88,6 +88,96 @@
 		</div>
 	</section>
 
+    <section class="project-section">
+		<div class="project-container">
+			<h2><?php echo get_field('project_title'); ?></h2>
+
+			<?php $image = get_field('accent'); ?>
+        	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
+
+        	<p> <?php echo get_field('project_paragraph'); ?> </p>
+
+        	<div class="project-images">
+				<figure class="project-image">
+						<?php $image = get_field('project_image1'); ?>
+	        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+	        		</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image2'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image3'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image4'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image5'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image6'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image7'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+				<figure class="project-image">
+					<?php $image = get_field('project_image8'); ?>
+        			<img src="<?php echo $image['url']?>">
+					<div class="project-overlay">
+						<a href="#">// View \\</a>
+        			</div>
+				</figure>
+        	</div>
+		</div>
+    </section>
+
+	<section class="descriptive-section black-background">
+		<div class="dot-overlay">
+			<div class="descriptive-container">
+				<div class="descriptive-title">
+					<h2> <?php echo get_field('descriptive_title') ?> </h2>
+				</div>
+				<div class="descriptive-text-left">
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_1') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_2') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_3') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_4') ?> </p>
+					<p> <?php echo get_field('descriptive_text_short') ?> </p>
+				</div>
+				<div class="descriptive-text-right">
+					<p> <?php echo get_field('descriptive_text_long') ?> </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="quote-section">
         <div class="quote-container">
             <div id="quote" class="owl-carousel owl-theme">
@@ -115,35 +205,6 @@
             </div>
         </div>
     </section>
-
-    <section class="project-section">
-		<div class="project-container">
-			<h2><?php echo get_field('project_title'); ?></h2>
-
-			<?php $image = get_field('accent'); ?>
-        	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
-		</div>
-    </section>
-
-	<section class="descriptive-section black-background">
-		<div class="dot-overlay">
-			<div class="descriptive-container">
-				<div class="descriptive-title">
-					<h2> <?php echo get_field('descriptive_title') ?> </h2>
-				</div>
-				<div class="descriptive-text-left">
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_1') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_2') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_3') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_4') ?> </p>
-					<p> <?php echo get_field('descriptive_text_short') ?> </p>
-				</div>
-				<div class="descriptive-text-right">
-					<p> <?php echo get_field('descriptive_text_long') ?> </p>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<div class="container">
 
