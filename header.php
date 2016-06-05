@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="main-nav container">
+  <div class="main-nav">
       <!-- Nav logo -->
      <?php $image = get_field('nav_logo') ?>
       <!-- <pre><?php  // print_r($image);?></pre> -->
