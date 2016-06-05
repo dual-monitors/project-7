@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 30px;
+	padding: 19px 30px;
 	img {
-		height: 50px;
+		height: 33px;
 	}
 
 }
@@ -16,7 +16,7 @@ ul.menu {
 		margin-right: 10px;
 		a {
 			padding: 10px;
-			color: #212127;
+			color: $black;
 			font-family: 'Montserrat', sans-serif;
 			text-transform: uppercase;
 			letter-spacing: 2px;

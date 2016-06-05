@@ -11,7 +11,7 @@
 		<div class="about-container">
 			<h2> <?php echo get_field('about_title') ?> </h2>
 
-			<?php $image = get_field('skills_accent'); ?>
+			<?php $image = get_field('accent'); ?>
         	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
 
         	<p> <?php echo get_field('about_paragraph'); ?> </p>

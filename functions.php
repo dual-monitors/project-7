@@ -104,6 +104,24 @@ function hackeryou_scripts() {
 		null, // Version number
 		true // Load in footer
 	);
+	// Owl Carousel
+	wp_enqueue_script(
+		'owl-carousel', // Handle
+		get_template_directory_uri() . '/js/owl.carousel.min.js', // Source
+		'jquery', // Dependencies
+		null, // Version number
+		true // Load in footer
+	);
+	// Main JS
+	wp_enqueue_script(
+		'main-js', // Handle
+		get_template_directory_uri() . '/js/main.js', // Source
+		'jquery', // Dependencies
+		null, // Version number
+		true // Load in footer
+	);
+
+
 
   wp_enqueue_script(
 	'plugins', // Handle
