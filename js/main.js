@@ -9,4 +9,8 @@ $(document).ready(function () {
 
     });
 
+    $("#menu-btn").on("click", function() {
+    	$("#menu-main-nav").toggleClass("show-main-nav");
+    });
+
 });
