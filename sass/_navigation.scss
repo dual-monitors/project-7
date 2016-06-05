@@ -1,27 +1,35 @@
+#menu-btn {
+	background-color: transparent;
+	border: none;
+	display: none;
+	i { 
+		color: $black;
+	}
+}
+
 .main-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 19px 30px;
+	padding: 20px 30px;
 	img {
 		height: 33px;
 	}
-
 }
-ul.menu {
+#menu-main-nav {
 	margin: 0;
 	padding: 0;
 	li {
 		display: inline;
 		margin-right: 10px;
-		a {
-			padding: 10px;
-			color: $black;
-			font-family: 'Montserrat', sans-serif;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-size: 11px;
-			transition: all 0.3s;
-		}
+	}
+	a {
+		padding: 10px;
+		color: $black;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 11px;
+		transition: all 0.3s;
 	}
 }

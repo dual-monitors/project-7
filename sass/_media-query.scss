@@ -1,0 +1,29 @@
+@media screen and (max-width: 520px) {
+	.main-nav {
+		position: relative;
+	}
+	#menu-btn {
+		display: block;
+	}
+	#menu-main-nav {
+		background-color: lighten($black, 10);
+		display: none;
+		justify-content: space-around;
+		width: 100%;
+
+		position: absolute;
+		top: 50px;
+		right: 0;
+		&.show-main-nav {
+			display: flex;
+		}
+		li {
+			// display: block;
+			margin: 0;
+		}
+		a {
+			color: white;
+			padding: 10px 0;
+		}
+	}
+}
