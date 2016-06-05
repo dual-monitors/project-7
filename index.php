@@ -1,6 +1,16 @@
 <?php get_header(); ?>
 <?php //index.php is the last resort template, if no other templates match ?>
 
+<!-- <div class="test-logo">
+            <?php 
+              // global $wp_query;
+              // $pageId = $wp_query->queried_object_id;
+            ?>
+      
+            <?php // $pageheader = get_field('nav_logo', $pageId); ?>
+            <img src="<?php // echo $pageheader['sizes']['medium']?>" alt="" >
+ </div> -->
+
 <div class="main">
 
 	<div class="page-title black-background">
