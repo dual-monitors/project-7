@@ -3,8 +3,10 @@
 
 <div class="main">
 
-	<div class="page-title">
-		<h2> <?php echo $our_title = get_the_title( get_option('page_for_posts', true) ); ?> </h2>
+	<div class="page-title black-background">
+		<div class="dot-overlay">
+			<h2> <?php echo $our_title = get_the_title( get_option('page_for_posts', true) ); ?> </h2>
+		</div>
 	</div>
 
   	<div class="container">
