@@ -65,11 +65,10 @@ body {
 		text-transform: uppercase;
 	}
 }
-
-
-
-
-
-
-
+.black-background {
+	background-color: $black;
+	.dot-overlay {
+		background: url("../project-7-theme/images/dot.png");
+	}
+}
 
