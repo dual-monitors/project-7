@@ -81,7 +81,7 @@ function hackeryou_scripts() {
 	// Set to accept requests from these HTTP referrers (websites):
 	//	- dustinruetz.com
 	//	- jordankeen.com
-	//	- http://localhost:3000/project-7/contact/
+	//	- http://localhost:3000/project-7/*
 
 
 

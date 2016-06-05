@@ -1,8 +1,10 @@
 <?php get_header();  ?>
 
 <div class="main">
-	<div class="page-title">
-		<h2><?php the_title(); ?></h2>
+	<div class="page-title black-background">
+		<div class="dot-overlay">
+			<h2><?php the_title(); ?></h2>
+		</div>
 	</div>
 	<section class="contact-info">
 		<div class="contact-phone">
