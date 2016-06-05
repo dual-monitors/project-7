@@ -1,10 +1,11 @@
 <?php get_header();  ?>
 
 <div class="hero" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url( 
+
         <?php $image = get_field('hero_image'); ?>
         <?php echo $image['url']?>
         )">
-
+        
 	<div class="hero-content">
 		<h1> <?php echo get_field('hero_title'); ?> </h1>
 		<div class="hero-keywords">
@@ -55,8 +56,8 @@
 
 	</section>
 
-	<section class="portfolio-section">
-		<div class="overlay">
+	<section id="portfolio-section" class="black-background">
+		<div class="dot-overlay">
 			<div class="portfolio-container">
 
 				<div class="portfolio-text">
@@ -123,6 +124,26 @@
         	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
 		</div>
     </section>
+
+	<section class="descriptive-section black-background">
+		<div class="dot-overlay">
+			<div class="descriptive-container">
+				<div class="descriptive-title">
+					<h2> <?php echo get_field('descriptive_title') ?> </h2>
+				</div>
+				<div class="descriptive-text-left">
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_1') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_2') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_3') ?> </p>
+					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_4') ?> </p>
+					<p> <?php echo get_field('descriptive_text_short') ?> </p>
+				</div>
+				<div class="descriptive-text-right">
+					<p> <?php echo get_field('descriptive_text_long') ?> </p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<div class="container">
 
