@@ -165,10 +165,12 @@
 					<h2> <?php echo get_field('descriptive_title') ?> </h2>
 				</div>
 				<div class="descriptive-text-left">
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_1') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_2') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_3') ?> </p>
-					<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_4') ?> </p>
+					<div class="descriptive-skills">
+						<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_1') ?> </p>
+						<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_2') ?> </p>
+						<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_3') ?> </p>
+						<p class="descriptive-skill"> <?php echo get_field('descriptive_skill_4') ?> </p>
+					</div>
 					<p> <?php echo get_field('descriptive_text_short') ?> </p>
 				</div>
 				<div class="descriptive-text-right">
