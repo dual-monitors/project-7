@@ -7,10 +7,7 @@
 * Author URI: http://hackeryou.com
 */
 
-
 // Colour Variables
-
-
 $black: #212127;
 
 @import 'normalize';
@@ -38,6 +35,11 @@ body {
 	color: #2F2F33;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+}
+.section-container {
+	margin: 0 auto;
+	max-width: 925px;
+	padding: 0 20px;
 }
 .container {
 	max-width: 1200px;

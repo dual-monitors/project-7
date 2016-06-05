@@ -1,6 +1,6 @@
 <?php get_header();  ?>
 
-<div class="hero" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url( 
+<div id="hero" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url( 
 
         <?php $image = get_field('hero_image'); ?>
         <?php echo $image['url']?>
@@ -19,9 +19,9 @@
 
 <div class="main">
 
-	<section class="skills-section">
+	<section id="skills-section">
 
-		<div class="skills-container">
+		<div class="section-container">
 			<h2><?php echo get_field('skills_title'); ?></h2>
 
 			<?php $image = get_field('accent'); ?>
@@ -58,7 +58,7 @@
 
 	<section id="portfolio-section" class="black-background">
 		<div class="dot-overlay">
-			<div class="portfolio-container">
+			<div class="section-container">
 
 				<div class="portfolio-text">
 					<h2><?php  echo get_field('portfolio_title'); ?></h2>
@@ -88,8 +88,8 @@
 		</div>
 	</section>
 
-    <section class="project-section">
-		<div class="project-container">
+    <section id="project-section">
+		<div class="section-container">
 			<h2><?php echo get_field('project_title'); ?></h2>
 
 			<?php $image = get_field('accent'); ?>
@@ -158,9 +158,9 @@
 		</div>
     </section>
 
-	<section class="descriptive-section black-background">
+	<section id="descriptive-section" class="black-background">
 		<div class="dot-overlay">
-			<div class="descriptive-container">
+			<div class="section-container">
 				<div class="descriptive-title">
 					<h2> <?php echo get_field('descriptive_title') ?> </h2>
 				</div>
@@ -178,8 +178,14 @@
 		</div>
 	</section>
 
-	<section class="quote-section">
-        <div class="quote-container">
+	<section id="quote-section">
+        <div class="section-container">
+
+			<h2><?php echo get_field('quotes_section_title'); ?></h2>
+
+			<?php $image = get_field('accent'); ?>
+        	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
+
             <div id="quote" class="owl-carousel owl-theme">
                 <div class="item">
                     <blockquote>
@@ -205,16 +211,6 @@
             </div>
         </div>
     </section>
-
-	<div class="container">
-
-		<div class="content">
-			
-		</div> <!-- /,content -->
-
- 
-
-	</div> <!-- /.container -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

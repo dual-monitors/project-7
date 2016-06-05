@@ -1,3 +1,24 @@
+@media screen and (max-width: 620px) {
+	.hero-content {
+		h1 {
+			font-size: 40px;
+		}
+	}
+	.hero-keywords {
+		flex-direction: column;
+		text-align: center;
+
+		p {
+			margin: 2px 0;
+		}
+
+		p:nth-child(2):before,
+		p:nth-child(2):after {
+			content: '';
+		}
+	}
+}
+
 @media screen and (max-width: 520px) {
 	.main-nav {
 		position: relative;
@@ -18,7 +39,6 @@
 			display: flex;
 		}
 		li {
-			// display: block;
 			margin: 0;
 		}
 		a {
