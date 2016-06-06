@@ -16,9 +16,9 @@
 			<?php $image = get_field('accent'); ?>
         	<img class="accent" src="<?php echo $image['sizes']['medium']?>">
 
-					<p> <?php echo get_field('about_paragraph'); ?> </p>
+			<p> <?php echo get_field('about_paragraph'); ?> </p>
 
-					<div class="about-images">
+			<div class="about-images">
 				<div class="about-image">
 					<?php $image = get_field('about_image1'); ?>
 							<img src="<?php echo $image['sizes']['large']?>">
@@ -43,7 +43,7 @@
 							<h4> <?php echo get_field('about_name4'); ?> </h4>
 							<p> <?php echo get_field('about_title4'); ?> </p>
 				</div>
-					</div>
+			</div>
 
 		</div>
 		</section>
