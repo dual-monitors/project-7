@@ -129,11 +129,13 @@
 		background-color: lighten($black, 10);
 		display: none;
 		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
 		width: 100%;
-
 		position: absolute;
-		top: 50px;
+		top: 73px;
 		right: 0;
+		padding: 38px 5px;
 		&.show-main-nav {
 			display: flex;
 		}
@@ -143,6 +145,8 @@
 		a {
 			color: white;
 			padding: 10px 0;
+			border-bottom: none;
+			font-size: 14px;
 		}
 	}
 
