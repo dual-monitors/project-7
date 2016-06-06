@@ -1,3 +1,8 @@
+@media screen and (max-width: 1025px) {
+	.entry-content {
+		font-size: 14px;
+	}
+}
 @media screen and (max-width: 800px) {
 	.page-footer {
 		.section-container {
@@ -7,6 +12,14 @@
 				text-align: center;
 			}
 		}
+	}
+	// About Section
+	.blog-content {
+		width: 100%;
+		margin-right: 0;
+	}
+	.sidebar {
+		width: 100%;
 	}
 	// Contact page
 	.contact-info {
