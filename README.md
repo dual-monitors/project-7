@@ -1,20 +1,5 @@
-# HackerYou Starter Theme
+# Archetype Theme
 
-This is a simple theme to get you up and running with a new theme in WordPress. 
+A modern, minimalist, and highly-customizable WordPress theme for small businesses and professional portfolios.
 
-## Gulp
-
-The theme includes gulp to process your styles and scripts, if you want to use gulp make sure you run `npm install` and `gulp` so that it will watch your files.
-
-If you are on windows and your `localhost` setup does not have `localhost:8888` make sure to change the browser sync task.
-
-```js
-gulp.task('bs', function() {
-    browserSync.init({
-        // if running on windows, change this to http://localhost
-        proxy: 'http://localhost:8888'
-    });
-});
-```
-
-
+Designed and developed by <a href="http://dustinruetz.com" target="_blank">Dustin Ruetz</a> and <a href="http://jordankeen.com" target="_blank">Jordan Keen</a>. Adapted from <a href="http://themeforest.net/item/tone-clean-minimal-template/7278606" target="_blank">T-ONE template</a> purchased from themeforest.net.

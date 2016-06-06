@@ -89,7 +89,8 @@ function hackeryou_scripts() {
 	// (Adapted from above "jquery" example)
 	wp_enqueue_script(
 		'google-map-api', // Handle
-		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maps.googleapis.com/maps/api/js?key=AIzaSyAyIQ5_LIyKwD14MZvmRyCZ5aCwM0224CI&v=3.exp&sensor=false", // Source
+		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maps.googleapis.com/maps/api/js?key=AIzaSyAyIQ5_LIyKwD14MZvmRyCZ5aCwM0224CI&v=3.exp", // Source
+		// NOTE: Removed "&sensor=false" from end of above URL to fix a console.log warning
 		'jquery', // Dependencies
 		null, // Version number
 		true // Load in footer
