@@ -72,6 +72,8 @@
 			position: latlng,
 			map: map,
 			styles: "",
+			// Customized white marker to go with black map
+			icon: "../wp-content/themes/project-7-theme/images/location-pin.png",
 			title: "Our address"
 		});
 

@@ -8,6 +8,22 @@
 			}
 		}
 	}
+	// Contact page
+	.contact-info {
+		flex-direction: column;
+		
+		> div {
+			margin-bottom: 20px;
+		}
+	}
+	.form-map {
+		flex-direction: column;
+		margin-bottom: 0;
+		.form,
+		.map {
+			width: 100%;
+		}
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -153,6 +169,19 @@
 		figure {
 			margin-bottom: 40px;
 			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.about-section {
+		padding: 50px 0;
+	}
+	.about-images {
+		flex-wrap: wrap;
+		.about-image {
+			margin-bottom: 20px;
+			width: 46%;
 		}
 	}
 }
