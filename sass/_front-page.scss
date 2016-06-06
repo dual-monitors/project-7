@@ -1,4 +1,5 @@
-.hero {
+// Hero section
+#hero {
 	width: 100%;
 	height: calc(100vh - 70px);
 	background-position: center;
@@ -15,6 +16,7 @@
 		font-weight: lighter;
 		color: white;
 		text-transform: uppercase;
+		text-align: center;
 	}
 }
 .hero-keywords {
@@ -28,18 +30,18 @@
 		font-size: 13px;
 		font-family: 'Montserrat', sans-serif;
 	}
-	p:nth-child(2):before, p:nth-child(2):after {
+	p:nth-child(2):before,
+	p:nth-child(2):after {
 		content: '|';
 	}
 }
-.skills-section {
+
+// Skills section
+#skills-section {
 	width: 100%;
 	padding: 100px 0;
-	.skills-container {
-		margin: 0 auto;
+	.section-container {
 		text-align: center;
-		max-width: 925px;
-		padding: 0 15px;
 		p {
 			font-size: 21px;
 			font-weight: 200;
@@ -65,14 +67,15 @@
 .accent {
 	margin: 20px auto 0;
 }
-.portfolio-container {
-	margin: 0 auto;
-	max-width: 925px;
-	padding: 100px 0;
-	
-	display: flex;
-	justify-content: space-between;
-}
+
+// Portfolio/Clients section
+#portfolio-section {
+	.section-container {
+		padding: 100px 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+}	
 .portfolio-text {
 	display: flex;
 	flex-direction: column;
@@ -96,33 +99,12 @@
 .portfolio-image {
 	width: 50%;
 }
-.quote-section {
-	width: 100%;
-	padding: 80px 0;
-	.quote-container {
-		max-width: 925px;
-		margin: 0 auto;
-		text-align: center;
-		h5 {
-			font-weight: 300;
-			font-size: 18.5px;
-			line-height: 24px;
-			font-style: italic;
-		}
-		p {
-			margin: 5px 0;
-			color: #999;
-			font-size: 15px;
-			font-style: italic;
-		}
-	}
-}
-.project-section {
+
+// Projects/Recent Work section
+#project-section {
 	width: 100%;
 	padding: 100px 0;
-	.project-container {
-		max-width: 925px;
-		margin: 0 auto;
+	.section-container {
 		text-align: center;
 		p {
 			max-width: 770px;
@@ -169,11 +151,13 @@
 			font-size: 14px;
 		}
 }
-.descriptive-container {
-	margin: 0 auto;
-	max-width: 925px;
-	padding: 100px 0;
-	display: flex;
+
+// Descriptive section
+#descriptive-section {
+	.section-container {
+		display: flex;
+		padding: 100px 20px;
+	}
 }
 .descriptive-title {
 	width: 40%;
@@ -183,9 +167,9 @@
 		max-width: 380px;
 	}
 }
-.descriptive-text-left {
-	& p:last-child{
-		margin-top: 40px;
+.descriptive-skills {
+	& p:nth-of-type(4) {
+		margin-bottom: 40px;
 	}
 }
 .descriptive-text-left,
@@ -193,7 +177,6 @@
 	color: #8A8A8A;
 	padding: 0 15px;
 	width: 30%;
-
 }
 .descriptive-skill {
 	border-bottom: 2px solid white;
@@ -205,3 +188,23 @@
 	text-transform: uppercase;
 }
 
+// Quotes/Testimonials section
+#quote-section {
+	width: 100%;
+	padding: 80px 0;
+	.section-container {
+		text-align: center;
+		h5 {
+			font-weight: 300;
+			font-size: 18.5px;
+			line-height: 24px;
+			font-style: italic;
+		}
+		p {
+			margin: 5px 0;
+			color: #999;
+			font-size: 15px;
+			font-style: italic;
+		}
+	}
+}
