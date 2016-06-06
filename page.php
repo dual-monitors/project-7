@@ -29,19 +29,19 @@
 					<?php $image = get_field('about_image2'); ?>
 							<img src="<?php echo $image['sizes']['large']?>">
 							<h4> <?php echo get_field('about_name2'); ?> </h4>
-					<p> <?php echo get_field('about_title1'); ?> </p>
+					<p> <?php echo get_field('about_title2'); ?> </p>
 				</div>
 				<div class="about-image">
 					<?php $image = get_field('about_image3'); ?>
 							<img src="<?php echo $image['sizes']['large']?>">
 							<h4> <?php echo get_field('about_name3'); ?> </h4>
-							<p> <?php echo get_field('about_title1'); ?> </p>
+							<p> <?php echo get_field('about_title3'); ?> </p>
 				</div>
 				<div class="about-image">
 					<?php $image = get_field('about_image4'); ?>
 							<img src="<?php echo $image['sizes']['large']?>">
 							<h4> <?php echo get_field('about_name4'); ?> </h4>
-							<p> <?php echo get_field('about_title1'); ?> </p>
+							<p> <?php echo get_field('about_title4'); ?> </p>
 				</div>
 					</div>
 

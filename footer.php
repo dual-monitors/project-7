@@ -1,5 +1,5 @@
 <footer class="page-footer">
-  <div class="container">
+  <div class="section-container">
     <p>&copy; Copyright <?php echo date('Y'); ?>. Designed and developed by <?php echo get_field('site_owner'); ?>.</p>
     <ul class="footer-social">
     	<li><a href=" <?php echo get_field('page_facebook'); ?> "><i class="fa fa-facebook" aria-hidden="true"></i>
