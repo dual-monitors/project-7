@@ -172,3 +172,16 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.about-section {
+		padding: 50px 0;
+	}
+	.about-images {
+		flex-wrap: wrap;
+		.about-image {
+			margin-bottom: 20px;
+			width: 46%;
+		}
+	}
+}
