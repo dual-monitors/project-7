@@ -2,6 +2,7 @@
 .form-map {
 	margin: 0 auto;
 	max-width: 1000px;
+	padding: 0 15px;
 }
 .contact-info {
 	letter-spacing: 2px;
@@ -11,6 +12,9 @@
 	
 	a {
 		color: $black;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	> div {
@@ -39,12 +43,15 @@
 	.form {
 		background-color: $black;
 		margin: 0;
-		padding: 15px 15px 0 15px;
+		padding: 30px 30px 10px;
 		width: 50%;
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		.wpcf7 {
+			width: 100%;
+		}
 		
 		label,
 		input,
@@ -65,7 +72,7 @@
 		}
 		
 		textarea {
-			height: 150px;
+			max-height: 127px;
 			margin-bottom: 18px;
 		}
 
@@ -85,6 +92,11 @@
 			color: #E5E5E5;
 			font-size: 14px;
 			letter-spacing: 2px;
+			transition: all 0.3s;
+			&:hover {
+				background-color: #E5E5E5;
+				color: $black;
+			}
 		}
 	}
 

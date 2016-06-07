@@ -4,7 +4,8 @@ footer {
 .page-footer {
 	background: $black;
 	padding: 30px;
-	.section-container {
+	.section-container,
+	.footer-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -15,7 +16,6 @@ footer {
 		letter-spacing: 2px;
 		color: lightgrey;
 	}
-
 }
 .footer-social {
 	list-style-type: none;
@@ -26,5 +26,9 @@ footer {
 		color: lightgrey;
 		font-size: 18px;
 		margin: 0 5px;
+		transitions: color 0.3s;
+		&:hover {
+			color: white;
+		}
 	}
 }
