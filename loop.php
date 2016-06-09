@@ -19,9 +19,9 @@
 	<article class="blog-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		
-
-		<?php echo get_the_post_thumbnail( $page->ID, 'full' ); ?>
-		
+		<div class="blog-image">
+			<?php echo get_the_post_thumbnail( $page->ID, 'url' ); ?>
+		</div>
 	
 		<h2 class="entry-title">
     		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
