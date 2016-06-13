@@ -18,7 +18,7 @@
 </div>
 
 <div class="main">
-
+<!-- Skills Section -->
 	<section id="skills-section">
 
 		<div class="section-container">
@@ -55,7 +55,7 @@
 		</div>
 
 	</section>
-
+<!-- Portfolio Section -->
 	<section id="portfolio-section" class="black-background">
 		<div class="dot-overlay">
 			<div class="section-container">
@@ -87,7 +87,7 @@
 			</div>
 		</div>
 	</section>
-
+<!-- Project Section -->
     <section id="project-section">
 		<div class="section-container">
 			<h2><?php echo get_field('project_title'); ?></h2>
@@ -157,7 +157,7 @@
         	</div>
 		</div>
     </section>
-
+<!-- Descriptive Section -->
 	<section id="descriptive-section" class="black-background">
 		<div class="dot-overlay">
 			<div class="section-container">
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 	</section>
-
+<!-- Quote Section -->
 	<section id="quote-section">
         <div class="section-container">
 

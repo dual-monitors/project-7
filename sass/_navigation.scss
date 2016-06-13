@@ -5,10 +5,8 @@
 	outline: transparent;
 	i { 
 		color: $black;
-
 	}
 }
-
 .main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -33,9 +31,12 @@
 		letter-spacing: 2px;
 		font-size: 11px;
 		border-bottom: 2px solid white;
-		transition: all 0.4s;
+		transition: all 0.5s;
 		&:hover {
 			border-color: $black;
+		}
+		&:focus {
+			outline: transparent;
 		}
 	}
 }

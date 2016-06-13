@@ -1,12 +1,25 @@
+@media screen and (max-width: 1025px) {
+	.entry-content {
+		font-size: 14px;
+	}
+}
 @media screen and (max-width: 800px) {
 	.page-footer {
-		.section-container {
+		.footer-container {
 			flex-direction: column;
 			p {
 				margin-bottom: 20px;
 				text-align: center;
 			}
 		}
+	}
+	// About Section
+	.blog-content {
+		width: 100%;
+		margin-right: 0;
+	}
+	.sidebar {
+		width: 100%;
 	}
 	// Contact page
 	.contact-info {
@@ -22,6 +35,7 @@
 		.form,
 		.map {
 			width: 100%;
+			margin-bottom: 55px;
 		}
 	}
 }
@@ -37,6 +51,10 @@
 		margin: 0 auto;
 		width: 90%;
 	}
+	.portfolio-text p,
+	.portfolio-text h2 {
+		text-align: center;
+	}
 	#descriptive-section {
 		.section-container {
 			flex-direction: column;
@@ -44,7 +62,6 @@
 	}
 	.descriptive-title {
 		width: 100%;
-
 		h2 {
 			margin: 0 auto 30px auto;
 			max-width: 95%;
@@ -53,11 +70,13 @@
 	.descriptive-text-left,
 	.descriptive-text-right {
 		width: 100%;
+	
 	}
 	.descriptive-skills {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 20px;
+		text-align: center;
 		& p:nth-of-type(4) {
 			margin-bottom: 10px;
 		}
@@ -143,7 +162,10 @@
 	}
 	#menu-main-nav {
 		background-color: lighten($black, 10);
-		display: none;
+		// display: none;
+		display: flex;
+		visibility: hidden;
+		opacity: 0;
 		justify-content: space-around;
 		align-items: center;
 		flex-direction: column;
@@ -152,8 +174,12 @@
 		top: 73px;
 		right: 0;
 		padding: 38px 5px;
+		transition: opacity 0.4s;
 		&.show-main-nav {
 			display: flex;
+			top: 73px;
+			visibility: visible;
+			opacity: 1;
 		}
 		li {
 			margin: 0;
@@ -169,12 +195,15 @@
 	// Skills section
 	.skills-images {
 		flex-wrap: wrap;
-		width: 75%;
+		width: 100%;
 		figure {
 			margin-bottom: 40px;
 			width: 50%;
 		}
 	}
+#skills-section .section-container .skills-images img {
+	height: 110px;
+}
 }
 
 @media screen and (max-width: 500px) {
