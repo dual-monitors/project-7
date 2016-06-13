@@ -15,9 +15,9 @@
     <div class="blog-post">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-
-        <?php echo get_the_post_thumbnail( $page->ID, 'large' ); ?>
-
+        <div class="blog-image">
+          <?php echo get_the_post_thumbnail( $page->ID, 'url' ); ?>
+        </div>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
 

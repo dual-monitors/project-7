@@ -1,7 +1,7 @@
 .sidebar {
 	width: 27%;
-	float: left;
-	margin-top: 25px;
+	// float: left;
+	margin: 25px 0;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -45,6 +45,8 @@
 			padding: 6px;
 			width: 24%;
 			transition: all 0.4s;
+			margin-top: 5px;
+			min-width: 61px;
 			&:hover {
 				background: #EBEBEB;
 				color: black;

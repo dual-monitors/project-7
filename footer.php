@@ -1,6 +1,24 @@
 <footer class="page-footer">
-  <div class="section-container">
-    <p>&copy; Copyright <?php echo date('Y'); ?>. Designed and developed by <?php echo get_field('site_owner'); ?>.</p>
+  <div class="footer-container">
+    <p>&copy; Copyright <?php echo date('Y'); ?>. Designed and developed by 
+
+		  <?php if( is_home() && get_option('page_for_posts') ) { ?>
+    		<?php echo get_field('site_owner', get_page( get_option('page_for_posts') )); ?>.
+
+      <?php } else if ( is_single() && get_option('page_for_posts') ) { ?>
+        <?php echo get_field('site_owner', get_page( get_option('page_for_posts') )); ?>.
+
+      <?php } else if( is_tag() && get_option('page_for_posts') ) { ?>
+        <?php echo get_field('site_owner', get_page( get_option('page_for_posts') )); ?>.
+
+      <?php } else if( is_category() && get_option('page_for_posts') ) { ?>
+        <?php echo get_field('site_owner', get_page( get_option('page_for_posts') )); ?>.
+
+    	<?php } else { ?>
+    		<?php echo get_field('site_owner'); ?>.
+      	<?php } ?>
+	</p>
+
     <ul class="footer-social">
     	<li><a href=" <?php echo get_field('page_facebook'); ?> "><i class="fa fa-facebook" aria-hidden="true"></i>
 </a></li>
